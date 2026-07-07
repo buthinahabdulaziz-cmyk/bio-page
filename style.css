@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F5F2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+/* Header */
+
+header {
+    background-color: #800020;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 42px;
+}
+
+header p {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #5C0011;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+
+/* Main */
+
+main {
+    width: 85%;
+    margin: 35px auto;
+}
+
+/* Sections */
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+section h2 {
+    color: #800020;
+    font-size: 30px;
+    margin-top: 0;
+    border-bottom: 2px solid #800020;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #5C0011;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+main{
+    width:95%;
+}
+
+header h1{
+    font-size:32px;
+}
+
+header p{
+    font-size:18px;
+}
+
+.profile-image{
+    width:140px;
+    height:140px;
+}
+
+nav a{
+    display:block;
+    margin:12px 0;
+}
+
+section h2{
+    font-size:26px;
+}
+
+}
