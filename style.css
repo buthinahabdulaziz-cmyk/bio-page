@@ -95,6 +95,38 @@ li {
     font-size: 18px;
 }
 
+/* =============================================
+   التعديل الجديد: تحويل سيكشن المهارات إلى Grid 
+   ============================================= */
+#skills ul {
+    display: grid; /* تفعيل الجريد */
+    /* تقسيم الأعمدة تلقائياً بحيث لا يقل عرض الكرت عن 160px ويملأ المساحة المتاحة */
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
+    gap: 12px; /* المسافة بين كروت المهارات */
+    padding-left: 0; /* إلغاء الهامش الافتراضي للقائمة */
+    list-style: none; /* إخفاء النقاط السوداء */
+}
+
+#skills li {
+    background-color: #F8F5F2; /* لون خلفية الكرت متناسق مع الموقع */
+    color: #800020; /* لون النص عنابي */
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 0; /* إلغاء الهامش السفلي القديم */
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease; /* حركة ناعمة عند التمرير */
+}
+
+/* تأثير إضافي عند تمرير الماوس على المهارة */
+#skills li:hover {
+    background-color: #800020;
+    color: white;
+    transform: translateY(-2px); /* رفعة خفيفة لفوق */
+}
+
 /* Footer */
 
 footer {
@@ -133,6 +165,11 @@ nav a{
 
 section h2{
     font-size:26px;
+}
+
+/* تظبيط الجريد للشاشات الصغيرة جداً */
+#skills ul {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
 }
 
 }
